@@ -1,10 +1,11 @@
-Name: Product
-Host: 0.0.0.0
-Port: 8001
+Name: user.rpc
+ListenOn: 0.0.0.0:9000
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: user.rpc
 
-Auth:
-  AccessSecret: uOvKLmVfztaXGpNYd4Z0I1SiT7MweJhl
-  AccessExpire: 86400
+Salt: HWVOFkGgPTryzICwd7qnJaZR9KQ2i8xe
 
 Mysql:
   DataSource: root:root@tcp(mysql:3306)/go-zero?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
@@ -12,12 +13,3 @@ Mysql:
 CacheRedis:
   - Host: localhost:6379
     Type: node # node可以不写，可以设为cluster
-
-
-ProductRpc:
-  Etcd:
-    Hosts:
-      - localhost:2379
-    Key: product.rpc
-
-

@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d06df72b-1329-4b69-92a6-79c358ad407b" name="Changes" comment="add service">
-      <change beforePath="$PROJECT_DIR$/command.bat" beforeDir="false" afterPath="$PROJECT_DIR$/command.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/product/api/etc/product.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/etc/product.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "H:/Codefield/Go/go-zero-mall/service",
+    "last_opened_file_path": "H:/Codefield/Go/go-zero-mall/service/product/api/product.go",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)"
   }
@@ -73,21 +74,27 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="go build mall" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.product api">
+    <configuration name="order api" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-zero-mall" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="mall" />
+      <working_directory value="$PROJECT_DIR$/service/order/api" />
+      <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <filePath value="$PROJECT_DIR$/service/order/api/order.go" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Build.go build mall" />
-      </list>
-    </recent_temporary>
+    <configuration name="product api" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-zero-mall" />
+      <working_directory value="$PROJECT_DIR$/service/product/api" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/service/product/api/product.go" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.order api" />
+      <item itemvalue="Go Build.product api" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
