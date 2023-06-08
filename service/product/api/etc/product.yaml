@@ -9,9 +9,6 @@ CacheRedis:
   - Host: localhost:6379
     Type: node # node可以不写，可以设为cluster
 
-Auth:
-  AccessSecret: uOvKLmVfztaXGpNYd4Z0I1SiT7MweJhl
-  AccessExpire: 86400
 
 ProductRpc:
   Etcd:

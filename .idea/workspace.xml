@@ -4,30 +4,37 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d06df72b-1329-4b69-92a6-79c358ad407b" name="Changes" comment="">
+    <list default="true" id="d06df72b-1329-4b69-92a6-79c358ad407b" name="Changes" comment="add service">
+      <change afterPath="$PROJECT_DIR$/common/cryptx/crypt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/database/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/database/redis.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jwtx/jwt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/order/api/order.api" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/order/model/order.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/order/rpc/order.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/user/api/user.api" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/user/model/user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/user/rpc/user.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/product/api/etc/product.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/etc/product.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/api/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/internal/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/api/internal/logic/createlogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/internal/logic/createlogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/api/internal/logic/detaillogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/internal/logic/detaillogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/api/internal/logic/removelogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/internal/logic/removelogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/api/internal/logic/updatelogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/internal/logic/updatelogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/api/internal/svc/servicecontext.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/internal/svc/servicecontext.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/api/product.api" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/product.api" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/command.bat" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/command.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/model/product.sql" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/model/product.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/rpc/etc/product.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/rpc/etc/product.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/rpc/internal/logic/createlogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/rpc/internal/logic/createlogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/rpc/internal/logic/detaillogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/rpc/internal/logic/detaillogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/rpc/internal/logic/removelogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/rpc/internal/logic/removelogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/rpc/internal/logic/updatelogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/rpc/internal/logic/updatelogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/product/command.bat" beforeDir="false" afterPath="$PROJECT_DIR$/command.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/product/rpc/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/rpc/internal/config/config.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Api File" />
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
@@ -37,74 +44,74 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QqTJ5argZxBFSt1j94FmuQ4wi6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;H:/Codefield/Go/go-zero-mall/service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultApiTemplateProperty": "Api File",
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "H:/Codefield/Go/go-zero-mall/service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\Codefield\Go\go-zero-mall\service" />
       <recent name="H:\Codefield\Go\go-zero-mall\user\api\internal\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\Codefield\Go\go-zero-mall" />
+      <recent name="H:\Codefield\Go\go-zero-mall\service\order" />
       <recent name="H:\Codefield\Go\go-zero-mall\user\api" />
       <recent name="H:\Codefield\Go\go-zero-mall\order\api" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build product.go">
-    <configuration name="go build product.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="GoApplicationRunConfiguration" />
+        <option value="GoTestRunConfiguration" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build mall" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-zero-mall" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
+      <kind value="PACKAGE" />
+      <package value="mall" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/service/product/rpc/product.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build user.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-zero-mall" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="go-zero-mall" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/user/rpc/user.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build user.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-zero-mall" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="go-zero-mall" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/user/rpc/userclient/user.go" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build product.go" />
-        <item itemvalue="Go Build.go build user.go (1)" />
-        <item itemvalue="Go Build.go build user.go" />
+        <item itemvalue="Go Build.go build mall" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add service" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

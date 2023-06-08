@@ -11,6 +11,5 @@ type Config struct {
 	Mysql struct {
 		DataSource string
 	}
-
 	CacheRedis cache.CacheConf
 }
