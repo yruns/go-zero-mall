@@ -1,4 +1,4 @@
-CREATE TABLE `product` (
+CREATE TABLE `newProduct` (
    `id` bigint unsigned NOT NULL AUTO_INCREMENT,
    `name` varchar(255)  NOT NULL DEFAULT '' COMMENT '产品名称',
    `desc` varchar(255)  NOT NULL DEFAULT '' COMMENT '产品描述',

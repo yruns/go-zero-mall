@@ -34,7 +34,7 @@ func (l *CreateLogic) Create(in *product.CreateRequest) (*product.CreateResponse
 		Status: in.Status,
 	}
 
-	res, err := l.svcCtx.ProductModel.Insert(context.Background(), &newProduct)
+	res, err := l.svcCtx.ProductModel.Insert(l.ctx, &newProduct)
 	if err != nil {
 		return nil, status.Error(500, err.Error())
 	}
