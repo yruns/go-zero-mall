@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/jinzhu/copier"
+	"mall/common/database"
+	"mall/service/user/model"
 )
 
 type User struct {
@@ -11,19 +12,9 @@ type User struct {
 }
 
 func main() {
-	u1 := User{
-		Id: 1,
-	}
-
-	u2 := User{
-		Id:   2,
-		Name: "yruns",
-	}
-
-	err := copier.CopyWithOption(&u2, u1, copier.Option{
-		IgnoreEmpty: true,
-	})
-	fmt.Println(err)
-	fmt.Println(u1)
-	fmt.Println(u2)
+	db := database.InitGorm("root:root@tcp(mysql:3306)/go-zero?charset=utf8mb4&parseTime=true")
+	var user model.User
+	affected := db.Table("user").Where("id = 1").First(&user).RowsAffected
+	fmt.Println(user)
+	fmt.Println(affected)
 }

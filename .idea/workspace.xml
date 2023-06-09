@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d06df72b-1329-4b69-92a6-79c358ad407b" name="Changes" comment="add service">
+      <change afterPath="$PROJECT_DIR$/config_template.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/pay/api/pay.api" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/pay/model/pay.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/pay/rpc/pay.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/command.bat" beforeDir="false" afterPath="$PROJECT_DIR$/command.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/database/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/database/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/order/api/etc/order.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/order/api/etc/order.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/order/rpc/etc/order.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/order/rpc/etc/order.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/order/rpc/internal/logic/updatelogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/order/rpc/internal/logic/updatelogic.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/product/api/etc/product.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/etc/product.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/product/rpc/etc/product.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/rpc/etc/product.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/user/api/etc/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/user/api/etc/user.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/user/rpc/etc/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/user/rpc/etc/user.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +62,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "H:/Codefield/Go/go-zero-mall/service/product/api/product.go",
+    "last_opened_file_path": "H:/Codefield/Go/go-zero-mall/service/order/rpc",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)"
   }
@@ -74,13 +87,37 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.product api">
+  <component name="RunManager" selected="Go Build.pay api">
     <configuration name="order api" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-zero-mall" />
       <working_directory value="$PROJECT_DIR$/service/order/api" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/service/order/api/order.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="order rpc" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-zero-mall" />
+      <working_directory value="$PROJECT_DIR$/service/order/rpc" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/service/order/rpc/order.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pay api" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-zero-mall" />
+      <working_directory value="$PROJECT_DIR$/service/pay/api" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/service/pay/api/pay.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pay rpc" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-zero-mall" />
+      <working_directory value="$PROJECT_DIR$/service/pay/rpc" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/service/pay/rpc/pay.go" />
       <method v="2" />
     </configuration>
     <configuration name="product api" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -91,9 +128,39 @@
       <filePath value="$PROJECT_DIR$/service/product/api/product.go" />
       <method v="2" />
     </configuration>
+    <configuration name="product rpc" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-zero-mall" />
+      <working_directory value="$PROJECT_DIR$/service/product/rpc" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/service/product/rpc/product.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="user api" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-zero-mall" />
+      <working_directory value="$PROJECT_DIR$/service/user/api" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/service/user/api/user.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="user rpc" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-zero-mall" />
+      <working_directory value="$PROJECT_DIR$/service/user/rpc" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/service/user/rpc/user.go" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.order api" />
       <item itemvalue="Go Build.product api" />
+      <item itemvalue="Go Build.product rpc" />
+      <item itemvalue="Go Build.user api" />
+      <item itemvalue="Go Build.pay api" />
+      <item itemvalue="Go Build.order rpc" />
+      <item itemvalue="Go Build.user rpc" />
+      <item itemvalue="Go Build.pay rpc" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

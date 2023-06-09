@@ -1,26 +1,36 @@
 package database
 
 import (
-	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
 )
 
 // InitGorm gorm初始化
 func InitGorm(MysqlDataSource string) *gorm.DB {
-	// 将日志写进kafka
-	db, err := gorm.Open(mysql.Open(MysqlDataSource),
-		&gorm.Config{
-			NamingStrategy: schema.NamingStrategy{
-				//TablePrefix:   "tech_", // 表名前缀，`User` 的表名应该是 `t_users`
-				SingularTable: true, // 使用单数表名，启用该选项，此时，`User` 的表名应该是 `t_user`
-			},
-		})
+	ormLogger := logger.Default.LogMode(logger.Info)
+
+	db, err := gorm.Open(mysql.New(mysql.Config{
+		DSN:                       MysqlDataSource,
+		DefaultStringSize:         256,  // string类型默认长度
+		DisableDatetimePrecision:  true, // 禁止datetime精度
+		DontSupportRenameIndex:    true, // 重命名索引
+		SkipInitializeWithVersion: false,
+	}), &gorm.Config{
+		Logger: ormLogger,
+		NamingStrategy: schema.NamingStrategy{
+			SingularTable: true,
+		},
+	})
+
 	if err != nil {
-		panic("连接mysql数据库失败, error=" + err.Error())
-	} else {
-		fmt.Println("连接mysql数据库成功")
+		panic("数据库连接失败")
 	}
+
+	sqlDB, _ := db.DB()
+	sqlDB.SetMaxOpenConns(20)  // 最大连接池
+	sqlDB.SetMaxOpenConns(100) // 打开连接数
+
 	return db
 }

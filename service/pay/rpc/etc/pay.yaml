@@ -1,11 +1,9 @@
-Name: user.rpc
-ListenOn: 127.0.0.1:9000
+Name: pay.rpc
+ListenOn: 127.0.0.1:8889
 Etcd:
   Hosts:
   - 127.0.0.1:2379
-  Key: user.rpc
-
-Salt: HWVOFkGgPTryzICwd7qnJaZR9KQ2i8xe
+  Key: pay.rpc
 
 Mysql:
   DataSource: root:root@tcp(mysql:3306)/go-zero?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
@@ -13,3 +11,17 @@ Mysql:
 CacheRedis:
   - Host: localhost:6379
     Type: node # node可以不写，可以设为cluster
+
+
+OrderRpc:
+  Etcd:
+    Hosts:
+      - localhost:2379
+    Key: order.rpc
+
+UserRpc:
+  Etcd:
+    Hosts:
+      - localhost:2379
+    Key: user.rpc
+
