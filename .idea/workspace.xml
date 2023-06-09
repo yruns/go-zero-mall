@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d06df72b-1329-4b69-92a6-79c358ad407b" name="Changes" comment="add service">
-      <change afterPath="$PROJECT_DIR$/config_template.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/pay/api/pay.api" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/pay/model/pay.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/pay/rpc/pay.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/command.bat" beforeDir="false" afterPath="$PROJECT_DIR$/command.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/database/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/database/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/order/api/etc/order.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/order/api/etc/order.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/order/rpc/etc/order.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/order/rpc/etc/order.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/order/rpc/internal/logic/updatelogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/order/rpc/internal/logic/updatelogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/api/etc/product.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/api/etc/product.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/product/rpc/etc/product.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/product/rpc/etc/product.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/user/api/etc/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/user/api/etc/user.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/user/rpc/etc/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/user/rpc/etc/user.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
